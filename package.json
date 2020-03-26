@@ -1,0 +1,22 @@
+{
+  "name": "cypher",
+  "version": "1.0.0",
+  "description": "This is my code file.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CyberCircut1/cypher.git"
+  },
+  "author": "Galen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CyberCircut1/cypher/issues"
+  },
+  "homepage": "https://github.com/CyberCircut1/cypher#readme",
+  "dependencies": {
+    "inquirer": "^7.1.0"
+  }
+}
