@@ -1,13 +1,7 @@
-# cypher
+# Cypher
 
-This is my code file.
+A basic encryptor 
 
-```
-this is some code
-```
-
-- first point
-
-## second
-
-### third
+This is a basic encryptor
+to encrypt a sentence or decrypt 
+the same type of encription.
