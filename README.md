@@ -1,7 +1,3 @@
-# Cypher
+# cypher
 
-A basic encryptor 
-
-This is a basic encryptor
-to encrypt a sentence or decrypt 
-the same type of encription.
+This is my basic encryptor that replaces the letter with a symbol.

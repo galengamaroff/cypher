@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/CyberCircut1/cypher#readme",
   "dependencies": {
+    "chalk-pipe": "^3.0.0",
     "inquirer": "^7.1.0"
   }
 }
