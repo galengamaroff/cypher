@@ -4,18 +4,16 @@ const dictionaryIN = require('./dictionaryIN');
 
 function cipher() {
     inquirer
-        .prompt([
-            {
-                type: 'list',
-                name: 'theme',
-                message: 'What do you want to do?',
-                choices: [
-                    'Cipher a Sentence',
-                    'End the program',
-                    'Decript a code'
-                ]
-            }
-        ])
+        .prompt([{
+            type: 'list',
+            name: 'theme',
+            message: 'What do you want to do?',
+            choices: [
+                'Cipher a Sentence',
+                'End the program',
+                'Decript a code'
+            ]
+        }])
         .then(answers => {
             if (answers.theme === 'End the program') {
                 process.exit();
@@ -23,14 +21,11 @@ function cipher() {
 
             if (answers.theme === 'Decript a code') {
                 inquirer
-                    .prompt([
-                        {
-                            type: 'input',
-                            name: 'message',
-                            message:
-                                'Write your sentence here. Please use _ as a space between characters.Remember not to use letters here.'
-                        }
-                    ])
+                    .prompt([{
+                        type: 'input',
+                        name: 'message',
+                        message: 'Write your sentence here. Please use _ as a space between characters.Remember not to use letters here.'
+                    }])
                     .then(answers1 => {
                         var decryptedMessage = '';
 
@@ -50,14 +45,11 @@ function cipher() {
 
             if (answers.theme === 'Cipher a Sentence') {
                 inquirer
-                    .prompt([
-                        {
-                            type: 'input',
-                            name: 'message',
-                            message:
-                                'Write your sentence here. Please use _ as a space between words.'
-                        }
-                    ])
+                    .prompt([{
+                        type: 'input',
+                        name: 'message',
+                        message: 'Write your sentence here. Please use _ as a space between words.'
+                    }])
                     .then(answers => {
                         var encryptedMessage = '';
 
@@ -72,18 +64,6 @@ function cipher() {
                         }
                         console.log(encryptedMessage);
 
-                        inquirer.prompt([
-                            {
-                                type: 'list',
-                                name: 'crypter',
-                                message: 'What do you want to do?',
-                                choices: ['Nothing', 'Decript the sentence']
-                            }
-                        ]);
-
-                        // if ('Decript the sentence') {
-                        //     encryptedMessage += replacedCharacter;
-                        // }
                         cipher();
                     });
             }
