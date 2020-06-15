@@ -1,3 +1,4 @@
+//I used converter to quickly edit the dictionary's it is not required in the code.
 const dictionary = require("./dictionary");
 const fs = require("fs");
 
